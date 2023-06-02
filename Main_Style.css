@@ -140,14 +140,14 @@ h3{
     justify-content: space-between;
 }
 
-.card:hover{
-    box-shadow: 0 0 20px rgba(100, 100, 100, 0.9);
-}
-
 .card img{
     padding: 6px 6px 6px;
     width: 299px;
     height: 280px;
+}
+
+.card img:hover{
+    box-shadow: 0 0 20px rgba(100, 100, 100, 0.9);
 }
 
 .card span{

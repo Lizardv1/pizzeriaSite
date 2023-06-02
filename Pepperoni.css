@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(52, 50, 49);
+    background-image: url("resources/images/pizza_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{ 
+    background-color: rgb(52, 50, 49);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.pizza_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.main{
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(0,0,0,0.5);
+    height: 99%;
+}
+
+.pizzaBlock{
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(52, 50, 49);
+}
+
+footer{
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(52, 50, 49);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer li{
+    justify-content: space-between;
+    list-style: none;
+    display: inline-block;
+}
+
+footer nav{
+    padding-top: 1%;
+    margin-right: 2%;
+}
+
+address{
+    color: white;
+}
+
+.phoneNumber{
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-left: 3%;
+}

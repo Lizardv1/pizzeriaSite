@@ -54,6 +54,25 @@ header{
     cursor: pointer;
 }
 
+.filterButton{
+    margin-right: 3%;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    border-radius: 35px;
+    border-style: none;
+    background-image: url(resources/images/Filter.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 35px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.filterButton:hover{
+    background-color: yellow;
+}
+
 .aboutUs{
     margin-left: 15%;
     margin-right: 15%;

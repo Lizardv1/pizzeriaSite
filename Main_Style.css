@@ -1,0 +1,161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+}
+
+body{
+    background-color: rgb(52, 50, 49);
+    background-image: url("resources/images/pizza_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{ 
+    background-color: rgb(52, 50, 49);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.menu-btn {
+    font-size: 25px;
+    margin-left: 2%;
+    padding: 40px;
+    height: 120px;
+    border: none;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn:hover{
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+}
+
+.pizza_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.aboutUs{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(26, 25, 25);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3%;
+}
+
+.textBlock{
+    width: 50%;
+    display: inline-block;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 50px;
+    padding-right: 10%;
+}
+
+h2 {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding-right: 10%;
+}
+
+.pizza2img{
+    width: 500px;
+    margin-right: 10px;
+    margin-top: 5%;
+}
+
+.goodsBlock{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(0,0,0,0.68);
+    display: flex;
+    align-content: center;
+    padding: 2% 5% 2% 5%;
+    justify-content: space-between;
+}
+
+.separator{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(52, 50, 49);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.card{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(52, 50, 49);
+}
+
+#card2{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+footer{
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(52, 50, 49);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer li{
+    justify-content: space-between;
+    list-style: none;
+    display: inline-block;
+}
+
+footer nav{
+    margin-right: 2%;
+}
+
+address{
+    color: white;
+}
+
+.phoneNumber{
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-left: 3%;
+}

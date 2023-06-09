@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Virchenko Vladimir">
     <title>Papa's Pizza</title>
-    <link rel="stylesheet" href="Main_Style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">-->
     <link rel="icon" href="resources/images/pizza_linkIcon.png">
 </head>
 <body>
@@ -14,10 +15,18 @@
         <div class = "header_container">
             <header class="header">
                 <button class="menu-btn">Меню</button>
-                    <a href="Main.html" class="pizza_logo">
+                    <a href="index.html" class="pizza_logo">
                         <img src="resources/images/Papa's pizza logo.svg" title="Вернуться на главную" class="logo">
                     </a>
-                <button class="filterButton" title = "Фильтры"></button>
+                    <button id="myBtn" class="filterButton" title="Фильтры"></button>
+                    <button id="myBtnClose" class="closeBtn" title = "Закрыть фильтры">&times;</button>
+                    <div id="mypopup" class="popup">
+                      <ul class="filterList">
+                        <button class ="filterButtons vegan" data-id = "vegan"> Вегетарианская </button>
+                        <button class="filterButtons meat" data-id = "meat"> С мясом </button>
+                        <button class="filterButtons all" data-id = "all">Всё</button>
+                      </ul>
+                    </div>
             </header>
         </div>
     </section>
@@ -38,18 +47,18 @@
         </div>
     <main>
         <div class="goodsBlock">
-            <div class="card" id="card1">
-                <a href="Pepperoni.html"><img src="resources/images/Pepperoni.jpg"></a>
+            <div class="card meat all" id="card1">
+                <a href="templates/Pepperoni.html"><img src="resources/images/Pepperoni.jpg"></a>
                 <span class="name">Пепперони</span>
                 <span class="price">Цена: 12$</span>
             </div>
-            <div class="card" id="card2">
-                <a href="Margarita.html"><img src="https://lastmen.ru/wp-content/uploads/2022/07/pitstsa-margarita-1024x683.jpg"></a>
+            <div class="card meat all" id="card2">
+                <a href="templates/Margarita.html"><img src="https://lastmen.ru/wp-content/uploads/2022/07/pitstsa-margarita-1024x683.jpg"></a>
                 <span class="name">Маргарита</span>
                 <span class="price">Цена: 6$</span>
             </div>
-            <div class="card" id="card3">
-                <a href="4Cheeses.html"><img src="https://lastmen.ru/wp-content/uploads/2022/07/pitstsa-chetyre-syra.jpg"></a>
+            <div class="card vegan all" id="card3">
+                <a href="templates/4Cheeses.html"><img src="https://lastmen.ru/wp-content/uploads/2022/07/pitstsa-chetyre-syra.jpg"></a>
                 <span class="name">Четыре сыра</span>
                 <span class="price">Цена: 8$</span>
             </div>
@@ -67,5 +76,7 @@
             <li><a href="#" title="Наш канал в телеграмме"><img src = "resources/images/Tg.svg"></a></li>
         </nav>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

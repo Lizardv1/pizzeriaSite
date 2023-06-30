@@ -5,10 +5,6 @@
     font-family: 'Caveat', cursive;
 }
 
-.menu{
-    margin-top: 120px;
-}
-
 body{
     background-color: rgb(52, 50, 49);
     background-image: url("../resources/images/pizza_background.jpeg");

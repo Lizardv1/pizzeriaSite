@@ -37,19 +37,23 @@ const list = document.querySelector('.filterList'),
       items = document.querySelectorAll('.card')
 
       function filter(){
+        const goodsBlock = document.querySelector('.goodsBlock');
           list.addEventListener('click', event =>{
               const targetId = event.target.dataset.id
               console.log(targetId)
 
               switch(targetId) {
                 case 'all':
-                  getItems('card')
+                  getItems('card');
+                  goodsBlock.style.justifyContent = 'space-between';
                   break
                 case 'meat':
                   getItems(targetId)
+                  goodsBlock.style.justifyContent = 'baseline';
                   break
                 case 'vegan':
-                  getItems(targetId)
+                  getItems(targetId);
+                  goodsBlock.style.justifyContent = 'space-around';
                   break
               }
           })
